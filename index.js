@@ -203,7 +203,7 @@ app.post("/addMessageToChat", (req, res)=>{
         }
     )
 })
-app.listen(3002, ()=>{
+app.listen(process.env.PORT||3002, ()=>{
     console.log("The server is up and running at 3002");
 })
 
