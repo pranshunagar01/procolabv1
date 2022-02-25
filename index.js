@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 const mongoose = require('mongoose');
 app.use(express.json());
-app.use(express.static('build'));
+app.use(express.static('build'))
 mongoose.connect(
     "mongodb+srv://pranshunagar01:%2Apranshunagar01%23@cluster0.gsjk9.mongodb.net/procolab?retryWrites=true&w=majority",
     { useNewUrlParser: true }
